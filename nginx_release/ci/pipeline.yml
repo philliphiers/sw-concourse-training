@@ -2,6 +2,7 @@ jobs:
 - name: job-upload-release
   plan:
   - get: source-code
+    trigger: true
     params:
       depth: 1
   - config:
